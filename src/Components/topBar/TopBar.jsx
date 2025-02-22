@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Button from "../Button";
-import { Link, NavLink } from "react-router-dom";
-
 
 export default function TopBar() {
   
@@ -30,26 +28,11 @@ export default function TopBar() {
 
   return (
     <>
-      <div className="bg-gray-900 fixed w-full text-white flex flex-col m-0 p-0">
-  
-        {/* First TopBar */}
-        <div className="flex justify-between items-center p-3">
+      <div className="bg-gray-900 w-full text-white flex flex-col m-0 p-0">
+
+        <div className="lg:h-12 md:h-22 lg:text-[1rem] md:text-[12px] sm:text-[12px] font-semibold bg-[linear-gradient(135deg,_#000080_60%,_#87CEEB_40%)] p-2">
           
-          <div className="">evantomarket</div>
-
-          <div className="">
-            <Button type="button" className="bg-green-600 shadow-md border-none cursor-pointer hover:opacity-95 
-            transition-all duration-300">
-              Buy Now
-            </Button>
-          </div>
-
-        </div>
-
-        {/* Second TopBar */}
-        <div className="h-12 text-[1rem] font-semibold bg-[linear-gradient(135deg,_#000080_60%,_#87CEEB_40%)] p-2">
-          
-          <div className="mx-auto flex justify-between items-center">
+          <div className="mx-auto flex justify-between items-center lg:flex-row md:flex-col sm:flex-col">
           
             <div className="flex items-center space-x-6 ml-18">
           
@@ -64,7 +47,6 @@ export default function TopBar() {
               ))}
 
             </div>
-
            
               
               <div className="flex items-center justify-between gap-2 transition-all duration-300 ease-in-out 
@@ -81,7 +63,7 @@ export default function TopBar() {
 
                 <div className="flex items-center justify-between gap-2">
 
-                <i class="fa-solid fa-globe"></i>
+                <i className="fa-solid fa-globe"></i>
 
                 {/* Custom Select Dropdown */}
                 <div className="relative">
@@ -113,7 +95,7 @@ export default function TopBar() {
 
                 <div className="flex items-center justify-between gap-3">
                   
-                  <h6 className="ml-4">Follow Us:</h6>
+                  <h6 className="ml-4 lg:block hidden">Follow Us:</h6>
                   
                   <div className="flex items-center justify-between gap-4">
                     <i className="fa-brands fa-facebook hover:text-black"></i>

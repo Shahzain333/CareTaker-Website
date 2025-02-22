@@ -7,14 +7,13 @@ function App() {
     <>
       <div>
         <Header />
-      </div>
-      {/* <main>
-        <Outlet/>
-      </main> */}
-      {/* <div>
+      
+        <main>
+          <Outlet/>
+        </main> 
 
       </div>
-      */}
+      
     </>
   )
 }
