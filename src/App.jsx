@@ -1,4 +1,4 @@
-import { Header } from './Components/index'
+import { Footer, Header } from './Components/index'
 import { Outlet } from 'react-router-dom'
 
 function App() {
@@ -6,12 +6,15 @@ function App() {
   return (
     <>
       <div>
+        
         <Header />
       
         <main>
           <Outlet/>
         </main> 
 
+        <Footer />
+        
       </div>
       
     </>
