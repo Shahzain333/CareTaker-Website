@@ -62,7 +62,7 @@ function Footer() {
           <div className="flex flex-wrap md:flex-nowrap items-center mt-8 gap-2 md:w-full">
 
           {/* Input with Red Border on Focus */}
-           <div className="flex items-center rounded-lg px-2 flex-1 min-w-[180px] md:w-64 border-b border-gray-300 
+           <div className="flex items-center rounded-lg px-2 flex-1 min-w-[180px] md:w-64 border-b text-white border-gray-300 
          focus-within:border-red-500">
 
            <i className="fa-regular fa-envelope text-red-500"></i>
@@ -103,9 +103,9 @@ function Footer() {
                               
                 <li key={foot.title}>
                   
-                  <NavLink to={foot.link} className={({ isActive }) => isActive ? `text-white hover:text-red-400 
-                    transform transition-transform duration-300 hover:translate-x-12 `: 
-                  `text-red-600`} >
+                  <NavLink to={foot.link} className={({ isActive }) => isActive ? `transform transition-transform 
+                    duration-300 translate-x-12 text-white hover:text-red-400`
+                    : `transition-transform duration-300 hover:translate-x-3 text-red-600`}>
                     {foot.title}
                   </NavLink> 
 
@@ -209,7 +209,7 @@ function Footer() {
             <div className="flex items-center justify-between gap-4">
 
               {social.map((social) => (
-                <Link key={social.style} className='bg-white text-red-400 h-10 w-10 rounded-full flex items-center justify-center
+                <Link key={social.style} to={social.link || "#"} className='bg-white text-red-400 h-10 w-10 rounded-full flex items-center justify-center
                 hover:bg-red-400 hover:text-white'><i className={social.style}></i></Link>
               ))}
 

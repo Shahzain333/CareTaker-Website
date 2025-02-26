@@ -9,6 +9,16 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
 
+  // const navItem = [
+  //   { title: "Home", link: '/'},
+  //   { title: "About", link: '/about'},
+  //   { title: "Service", link: '/services'},
+  //   { title: "Pages", link: '/pages'},
+  //   { title: "Portfolio", link: '/portfolio'},
+  //   { title: "Blog", link: '/blog'},
+  //   { title: "Contact", link: '/contact'},
+  // ]
+
   const navItem = [
     { title: "Home", link: '/'},
     { title: "About", link: '/'},
@@ -21,11 +31,12 @@ export default function Header() {
 
   return (
     <>
-      <header className="h-22 shadow-md fixed bg-white text-black w-full">
+      <header className="h-22 shadow-md fixed bg-white text-black w-full top-0 left-0 right-0 z-10">
         
         <Conatiner>
 
-          <div className="flex items-center md:justify-center md:gap-40 justify-between mt-4 transition-all duration-300 ease-in-out">
+          <div className="flex items-center md:justify-center md:gap-40 justify-between mt-4 transition-all 
+          duration-300 ease-in-out">
 
             <div className="ml-4">
               <img src={Logo}  width={70} alt="Seno Care Logo"/>
@@ -40,7 +51,7 @@ export default function Header() {
                               
                   <li key={nav.title}>
                     <NavLink to={nav.link} className={({isActive}) => isActive ? 'text-black hover:text-red-400 transition-all duration-300 delay-150 ease-in-out' : 
-                    'text-red-600 hover:underline hover:underline-offset-4'} >
+                    'text-red-600 hover:underline hover:underline-offset-4 transition-all duration-300 ease-in-out delay-150 '} >
                       {nav.title}
                     </NavLink> 
                   </li>

@@ -16,7 +16,7 @@ function Input({
 
         {label && <label htmlFor={id} className='block text-white font-medium mb-1 text-lg'>{label}</label>}
         
-        <input className={`border-1 border-gray-500 rounded outline-none px-6 py-[0.5rem] sm:text-[1rem] sm:font-medium text-white 
+        <input className={`border-1 border-gray-500 rounded outline-none px-4 py-3 sm:text-[1rem] sm:font-medium
         duration-100 ease-in-out focus:border-primary focus:border-2 ${className}`} 
         placeholder={placeholder}
         type={type}
