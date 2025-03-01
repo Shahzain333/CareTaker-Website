@@ -7,7 +7,6 @@ import { Link, NavLink } from "react-router-dom"
 export default function Header() {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(false);
 
   // const navItem = [
   //   { title: "Home", link: '/'},
@@ -31,21 +30,19 @@ export default function Header() {
 
   return (
     <>
-      <header className="h-22 shadow-md fixed bg-white text-black w-full top-0 left-0 right-0 z-10">
-        
-        <Conatiner>
 
-          <div className="flex items-center md:justify-center md:gap-40 justify-between mt-4 transition-all 
-          duration-300 ease-in-out">
+      <header className="h-18 shadow-md fixed bg-white text-black w-full top-0 left-0 right-0 z-10">
 
-            <div className="ml-4">
-              <img src={Logo}  width={70} alt="Seno Care Logo"/>
+          <div className="flex items-center justify-between mt-2 transition-all duration-300 ease-in-out mr-2">
+
+            <div className="lg:ml-15 ml-4">
+              <img src={Logo}  width={60} alt="Seno Care Logo"/>
             </div>
 
             {/* For desktop  and laptop */}
             <div className='hidden md:block text-[1.2em]'>
                         
-              <ul className='flex items-center justify-between gap-6 font-semibold '>
+              <ul className='flex items-center justify-between md:gap-4 lg:gap-6 gap-0 font-semibold '>
                 
                 {navItem.map((nav) => (
                               
@@ -64,17 +61,17 @@ export default function Header() {
             </div>
 
             
-            <div className=" flex items-center justify-center gap-4 ">
+            <div className=" flex items-center justify-between">
               
               {/* Search Button */}
-              <Button>
+              <Button className="hidden md:block">
               
                 <svg xmlns="http://www.w3.org/2000/svg"  className="h-6 w-6"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round"  strokeLinejoin="round"  strokeWidth={2} 
                     d="M11 19a8 8 0 1 1 5.29-2.29l4.3 4.3a1 1 0 0 1-1.42 1.42l-4.3-4.3A8 8 0 0 1 11 19z" />
                 </svg>
 
-              </Button>
+              </Button >
               
               {/* TAlk Button */}
               <Button type="button" className="bg-red-400 text-white text-[1em] font-semibold py-3 px-4 hidden  
@@ -99,14 +96,18 @@ export default function Header() {
             {/* mobile menu */}
             {isMobileMenuOpen && (
               // <div className="fixed " onClick={() => setIsMobileMenuOpen(false)}/>
-              <div className={`fixed left-0 top-0 h-full w-70 bg-white shadow-md z-50 p-6 transform md:hidden sm:hidden
-                ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"} hover:shadow-md transition-transform duration-300 ease-in-out`}>
+              <div className={`fixed left-0 top-0 h-full w-70 bg-white shadow-md z-50 p-6 transform
+                ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"} hover:shadow-md transition-transform 
+                duration-300 ease-in-out`}>
               
-                {/* Close Button */}
-                
+                {/* Image Logo in Small Device */}
+                 
                 <img src={Logo} width={70} className="-mt-2" alt="Seno Care Logo"/>
                 
-                <Button type="button" className={`absolute top-4 right-4 h-12 w-12 rounded-full bg-red-500 text-white`}
+                {/* Close Button */}
+                
+                <Button type="button" className={`absolute top-4 right-4 h-12 w-12 rounded-full bg-red-500 
+                text-white`}
                   onClick={() => setIsMobileMenuOpen(false)}>
                   <i className="fa-solid fa-xmark text-[1.3rem]"></i>
                 </Button>
@@ -136,7 +137,7 @@ export default function Header() {
             
           </div>
         
-        </Conatiner>
+        
       
       </header>
     </>

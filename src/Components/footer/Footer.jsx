@@ -40,15 +40,16 @@ function Footer() {
 
   return (
 
-    <footer className='bg-gray-700 text-white pt-35 pb-10'>
+    <footer className='bg-gray-700 text-white pt-10 pb-10'>
 
       <Container>
         
       <div className=''> 
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-8 py-6'>
-
-        <div className='space-y-4 p-6 md:p-0 md:mr-20 m-0'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 px-4 py-6'>
+        
+        {/* First Portion Input */}
+        <div className='space-y-4 md:p-0 md:mr-20 m-0'>
 
           <img src={Logo} width={100} alt='footer logo'/>
 
@@ -87,8 +88,9 @@ function Footer() {
 
         </div>
 
-        <div className='grid grid-cols-2 md:grid-cols-3 mt-4 md:mt-0'>
-
+        {/* Company Portion */}
+        <div className='grid grid-cols-2 md:grid-cols-3 md:pt-4'>
+        {/* 1st portion */}
         <div className='space-y-2 p-2 md:p-0'>
          
          <h3 className='font-medium text-2xl'>Company</h3>
@@ -118,7 +120,7 @@ function Footer() {
          </div> 
 
         </div>
-
+        {/* 2nd portion */}
         <div className='space-y-2 p-2 md:p-0'>
          
          <h3 className='font-medium text-2xl'>Services</h3>
@@ -148,7 +150,7 @@ function Footer() {
          </div> 
 
         </div>
-
+        {/* 3rd portion */}
         <div className='space-y-2 p-2 md:p-0 md:mt-0 mt-8'>
          
          <h3 className='font-medium text-2xl'>Get In Touch</h3>
