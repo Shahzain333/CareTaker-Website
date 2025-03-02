@@ -49,18 +49,18 @@ function Card() {
                    : item.id === 2 ? "bg-blue-300" : item.id === 3 ? "bg-green-300" : "bg-yellow-300"}`}>
                     
                     {/* Image portion */}
-                    <div className='flex items-center justify-between p-4 relative'>
                     
-                        <img className='w-20 object-cover'src={item.image} alt={item.name} />
-                       
-                        <div className='flex items-center justify-center gap-2 absolute top-3 sm:left-50 sm:right-0 
-                        right-5'>
+                    <div className="flex items-center justify-between p-4 w-full">
 
-                            <div className='w-6 border-b-4 border-b-red-500 rounded-full'></div>
-                            <h1 className='text-3xl font-bold text-red-500'>0{item.id}</h1>
-                       
+                        {/* Left Side: Image */}
+                        <img className="w-10 sm:w-12 md:w-14 lg:w-18 object-cover" src={item.image} alt={item.name} />
+
+                        {/* Right Side: Number & Border */}
+                        <div className="flex items-center gap-2 absolute top-2 right-3">
+                            <div className="w-4 sm:w-6 md:w-8 border-b-4 border-b-red-500 rounded-full"></div>
+                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-red-500">0{item.id}</h1>
                         </div>
-                    
+ 
                     </div>
 
                     {/* Description Portion */}
