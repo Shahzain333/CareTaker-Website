@@ -6,6 +6,7 @@ import Card from "./card/Card"
 import Container from "./Container";
 import Button from "./Button";
 import Input from "./Input";
+import About from "./about/About";
 
 export {
     TopBar,
@@ -13,6 +14,7 @@ export {
     Footer,
     HeroSection,
     Card,
+    About,
     Container,
     Button,
     Input

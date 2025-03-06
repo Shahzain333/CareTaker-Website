@@ -9,7 +9,7 @@ export default function HeroSection(props) {
 
     return (
         
-      <section className='lg:pb-40 md:pb-75 pb-85 py-15 '>
+      <section className='lg:pb-45 md:pb-75 pb-85 py-15 '>
                 
         <div className='relative'>
                     
@@ -18,13 +18,13 @@ export default function HeroSection(props) {
 
             {/* Background Image  */}
             <div className=''>
-              <img className='w-full object-cover md:h-[50vh] lg:h-[55vh] xl:h-auto h-[42vh] ' src={heroImage} 
+              <img className='w-full h-120 lg:h-150 object-cover' src={heroImage} 
                 alt="Hero Section Image Home" />
             </div>
 
             {/* Text */}
-            <div className='absolute top-15 md:top-28 left-8 md:left-8 text-white flex flex-col gap-2 md:gap-6
-              px-2 md:ml-20'>
+            <div className='absolute top-10 md:top-20 lg:top-30 left-2 text-white flex flex-col gap-3 md:gap-7
+              lg:px-25 md:px-20 px-5'>
 
               <div className='flex items-center justify-start gap-2 sm:text-[1.3rem] text-[1.2rem] font-bold 
                 bg-red-400 rounded-3xl p-[3px] sm:w-72 w-67 '>
@@ -37,20 +37,19 @@ export default function HeroSection(props) {
         
               </div>
 
-              <h1 className='font-bold text-5xl md:text-6xl xl:text-7xl'>Live In Care & 
+              <h1 className='font-bold text-5xl md:text-6xl lg:text-7xl'>Live In Care & 
                 <span className="ml-2 text-gray-300" >Your</span> <br />
                 <span className="text-gray-300">Family</span> Will Love
               </h1>
                         
-              <p className='text-sm md:text-md lg:w-150'>There are many variations of passages orem psum availabale 
+              <p className='md:text-[1.2rem] sm:text-sm lg:w-150'>There are many variations of passages orem psum availabale 
               but the majority have suffered alteration in some form by injected humor.</p>
                         
               <div className='flex items-center gap-4'>
                           
                 <Link to="/">
-                  <Button type='button' className='bg-red-400 text-white  font-semibold md:py-3 md:px-4 
-                    transition-all duration-300 hover:bg-gray-700 group rounded-lg text-sm md:max-w-36 
-                    text-center cursor-pointer'>
+                  <Button type='button' className='bg-red-400 text-white  font-semibold py-3 px-4 transition-all 
+                  duration-300 hover:bg-gray-700 group rounded-lg text-center cursor-pointer'>
                       Add more
                       <i className="fa-solid fa-arrow-up rotate-45 ml-2 transition-transform duration-300 
                         group-hover:rotate-90"></i>
@@ -58,9 +57,8 @@ export default function HeroSection(props) {
                 </Link>
 
                 <Link to="/">
-                  <Button type='button' className='bg-blue-400 text-white  font-semibold md:py-3 md:px-4 
-                    transition-all duration-300 hover:bg-gray-700 group rounded-lg text-sm md:max-w-36 
-                    text-center cursor-pointer'>
+                  <Button type='button' className='bg-blue-400 text-white font-semibold py-3 px-4 transition-all 
+                  duration-300 hover:bg-gray-700 group rounded-lg text-center cursor-pointer '>
                       Learn more
                       <i className="fa-solid fa-arrow-up rotate-45 ml-2 transition-transform duration-300 
                         group-hover:rotate-90"></i>
@@ -73,9 +71,8 @@ export default function HeroSection(props) {
 
             {/* Box TO Find User Absolute */}
 
-            <div className="absolute left-1/2 transform lg:-translate-x-2/3 -translate-x-1/2 bottom-[-18.5rem] 
-              md:bottom-[-19.5rem] lg:bottom-[-7rem] bg-white shadow-md p-4 md:p-6 rounded-2xl w-[90%] md:w-[85%] 
-              lg:w-[60%] max-w-4xl flex-wrap flex-col">
+            <div className="absolute bg-white shadow-md p-4 md:p-6 rounded-2xl w-[90%] md:w-[85%] lg:w-[60%] 
+              flex-wrap flex-col -translate-y-5 md:-translate-y-6 lg:mx-20 md:mx-10 mx-5">
         
               <h1 className="text-[1.3rem] sm:text-2xl font-bold mb-4 mx-2 sm:mx-4">Find Us Near You</h1>
     
