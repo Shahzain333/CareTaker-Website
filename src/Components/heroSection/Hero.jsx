@@ -9,7 +9,7 @@ export default function HeroSection(props) {
 
     return (
         
-      <section className='lg:pb-45 md:pb-75 pb-85 py-15 '>
+      <section className='lg:pb-45 md:pb-75 pb-85 py-15'>
                 
         <div className='relative'>
                     

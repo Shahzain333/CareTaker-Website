@@ -9,26 +9,27 @@ function About() {
       
       <Container>
 
-       <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+       <div className='grid grid-cols-1 lg:grid-cols-2'>
        
         {/* Images */}
-        <div className='flex items-center justify-center gap-2 md:gap-4'>
+        <div className='flex items-center justify-center gap-4 md:gap-6'>
 
           {/* Left Column */}
           <div className='flex flex-col gap-2 items-center'>
       
             {/* First Image */}
-            <img src={FristImg} className="rounded-4xl w-full max-w-[200px] md:max-w-[260px]" alt='About First Image' />
+            <img src={FristImg} className="rounded-4xl w-full max-w-[160px] sm:max-w-[220px] md:max-w-[260px]" alt='About First Image' />
 
             {/* Red Circle with Dashed Border */}
             <div className='relative flex items-center justify-center'>
       
-              <div className='bg-red-500 rounded-full text-white text-center text-3xl md:text-5xl font-bold p-6 
-                  w-[200px] h-[100px] md:w-[240px] md:h-[120px] flex flex-col items-center justify-center'>
-                30+<span className=' text-sm md:text-lg'>Years of Experience</span>
+              <div className='bg-red-500 rounded-full text-white text-center text-2xl sm:text-3xl md:text-5xl font-bold p-6 
+                sm:w-[200px] sm:h-[100px] md:w-[240px] md:h-[120px] w-[160px] h-[100px] flex flex-col items-center 
+                justify-center'>30+<span className='text-sm md:text-lg'>Years of Experience</span>
               </div>
       
-              <div className='absolute border-4 border-dashed border-white w-[180px] h-[80px] md:w-[220px] md:h-[100px] rounded-full'></div>
+              <div className='absolute border-4 border-dashed border-white sm:w-[180px] sm:h-[80px] md:w-[220px] 
+              md:h-[100px] w-[150px] h-[90px] rounded-full'></div>
       
             </div>
       
@@ -40,23 +41,24 @@ function About() {
             {/* Circular Image with Dashed Border */}
             <div className='relative flex items-center justify-center'>
              
-              <img src={SecondImg} className='rounded-full w-[160px] h-[160px] md:w-[220px] 
-              md:h-[220px]' alt='About Second Image' />
+              <img src={SecondImg} className='rounded-full sm:w-[160px] sm:h-[160px] md:w-[220px] 
+              md:h-[220px] w-[130px] h-[130px]' alt='About Second Image' />
              
-              <div className='absolute border-4 border-white w-[140px] h-[140px] 
-               md:w-[200px] md:h-[200px] rounded-full'></div>
+              <div className='absolute border-4 border-white sm:w-[140px] sm:h-[140px] 
+               md:w-[200px] md:h-[200px] w-[120px] h-[120px] rounded-full'></div>
             
             </div>
 
             {/* Second Image */}
-            <img src={FristImg} className='rounded-4xl w-full max-w-[160px] md:max-w-[250px] md:h-[300px]' alt='About First Image' />
+            <img src={FristImg} className='rounded-4xl w-full sm:max-w-[170px] md:max-w-[280px] md:h-[300px]
+            max-w-[130px]' alt='About First Image' />
       
           </div>
 
         </div>
 
         {/* About me */}
-        <div className='lg:pt-5 px-2'>
+        <div className='pt-5 px-2'>
           
           <div className='flex items-center justify-start gap-2 text-[1.2rem] font-bold 
            bg-red-400 rounded-3xl p-[3px] w-38'>

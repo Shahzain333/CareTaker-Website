@@ -80,8 +80,7 @@ function Card() {
 
         </div>
 
-</Container>
-
+    </Container>
     
     </section>
   

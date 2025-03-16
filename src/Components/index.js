@@ -7,6 +7,7 @@ import Container from "./Container";
 import Button from "./Button";
 import Input from "./Input";
 import About from "./about/About";
+import Services from './services/Service';
 
 export {
     TopBar,
@@ -15,6 +16,7 @@ export {
     HeroSection,
     Card,
     About,
+    Services,
     Container,
     Button,
     Input
