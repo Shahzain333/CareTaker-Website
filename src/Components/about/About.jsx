@@ -5,7 +5,7 @@ import SecondImg from "../../assets/img/About2.png";
 
 function About() {
   return (
-    <section className='pt-8 pb-16'>
+    <section className='pt-22 pb-16'>
       
       <Container>
 

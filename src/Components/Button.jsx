@@ -8,7 +8,7 @@ export default  function Button({
 }) {
   return (
     <>
-      <button type={type} className={` px-4 py-2 rounded ${className}`} {...props}>
+      <button type={type} className={`px-4 py-2 rounded ${className}`} {...props}>
         { children }
       </button>
     </>

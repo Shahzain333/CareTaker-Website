@@ -45,7 +45,7 @@ function Card() {
                 {cardItem.map((item) => (
        
                   <div key={item.id} className={`flex gap-4 flex-col rounded-2xl shadow-md overflow-hidden 
-                   transition-transform duration-300 transform hover:scale-102 ${item.id === 1 ? 'bg-purple-300' 
+                   transform transition-transform duration-300 hover:scale-102 ${item.id === 1 ? 'bg-purple-300' 
                    : item.id === 2 ? "bg-blue-300" : item.id === 3 ? "bg-green-300" : "bg-yellow-300"}`}>
                     
                     {/* Image portion */}

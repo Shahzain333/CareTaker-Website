@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { Container, Card, Button } from '../index'
+import { Link, NavLink, Outlet } from 'react-router-dom'
+import { Button } from '../index'
 import serviceImg from '../../assets/img/HeroImage.jpg'
 import Logo from "../../assets/img/Seno Care.png"
 
@@ -11,54 +11,54 @@ function Service() {
       name: 'Dedicated Team', 
       description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis excepturi words of voluptatum deleniti atque.', 
       image: Logo, 
-      link: '/' 
+      link: '/allService'
     },
     { 
       id: 2, 
       name: 'Trusted Institute', 
       description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis excepturi words of voluptatum deleniti atque.', 
       image: Logo, 
-      link: '/' 
+      link: '/allService'
     },
     { 
       id: 3, 
       name: 'Affordable Price', 
       description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis excepturi words of voluptatum deleniti atque.', 
       image: Logo, 
-      link: '/' 
+      link: '/allService' 
     },
     { 
       id: 4, 
       name: 'Emergency Support', 
       description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis excepturi words of voluptatum deleniti atque.', 
       image: Logo, 
-      link: '/' 
+      link: '/allService' 
     },
     { 
       id: 5, 
       name: '24/7 Assistance', 
       description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis excepturi words of voluptatum deleniti atque.', 
       image: Logo, 
-      link: '/' 
+      link: '/allService' 
     },
     { 
       id: 6, 
       name: 'Expert Doctors', 
       description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis excepturi words of voluptatum deleniti atque.', 
       image: Logo, 
-      link: '/' 
+      link: '/allService' 
     },
     { 
       id: 7, 
       name: 'Dedicated Team', 
       description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis excepturi words of voluptatum deleniti atque.', 
       image: Logo, 
-      link: '/' 
+      link: '/allService' 
     },
   ];
 
   return (
-    <section className="pb-10">
+    <section className="pb-10 pt-18">
       
       <div className="relative">
 
@@ -123,20 +123,27 @@ function Service() {
                   
                   <p className="text-gray-600 text-sm">{item.description}</p>
                   
-                  <Link to={item.link}>
-                    <Button className="bg-red-400 text-white font-semibold py-1 px-4 transition-all duration-300 hover:bg-gray-700 rounded-lg text-center">
+                  <NavLink to={item.link}>
+                    <Button className="bg-red-400 text-white font-semibold py-0 px-4 transition-all 
+                    duration-300 hover:bg-gray-700 rounded-lg text-center group">
                       Details
-                      <i className="fa-solid fa-arrow-up rotate-45 ml-2 transition-transform duration-300 group-hover:rotate-90"></i>
+                      <i className="fa-solid fa-arrow-up rotate-45 ml-2 transition-transform duration-300 
+                      group-hover:rotate-90"></i>
                     </Button>
-                  </Link>
+                  </NavLink>
 
                 </div>
 
+                <Outlet/>
+              
               </div>
             ))}
 
           </div>
         </div>
+
+        {/* Neste Routing */}
+        <Outlet />
 
       </div>
     </section>

@@ -107,7 +107,8 @@ function Footer() {
                   
                   <NavLink to={foot.link} className={({ isActive }) => isActive ? `transform transition-transform 
                     duration-300 translate-x-12 text-white hover:text-red-400`
-                    : `transition-transform duration-300 hover:translate-x-3 text-red-600`}>
+                    : `transform transition-transform 
+                    duration-300 translate-x-12 text-white hover:text-red-400`}>
                     {foot.title}
                   </NavLink> 
 
@@ -137,7 +138,8 @@ function Footer() {
                   
                   <NavLink to={foot.link} className={({ isActive }) => isActive ? `text-white hover:text-red-400 
                     transform transition-transform duration-300 hover:translate-x-12 `: 
-                  `text-red-600 hover:translate-x-12 transform transition-transform duration-300`} >
+                  `text-white hover:text-red-400 
+                    transform transition-transform duration-300 hover:translate-x-12`} >
                     {foot.title}
                   </NavLink> 
 
@@ -178,7 +180,7 @@ function Footer() {
 
                   <div className='ml-12 -mt-2'>
 
-                  <NavLink to={info.link} className={({ isActive }) => isActive ? `text-white`: `text-red-600 `} >
+                  <NavLink to={info.link} className={({ isActive }) => isActive ? `text-white`: `text-white`} >
                     {info.address} 
                   </NavLink> 
 

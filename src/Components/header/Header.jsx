@@ -8,25 +8,25 @@ export default function Header() {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // const navItem = [
-  //   { title: "Home", link: '/'},
-  //   { title: "About", link: '/about'},
-  //   { title: "Service", link: '/services'},
-  //   { title: "Pages", link: '/pages'},
-  //   { title: "Portfolio", link: '/portfolio'},
-  //   { title: "Blog", link: '/blog'},
-  //   { title: "Contact", link: '/contact'},
-  // ]
-
   const navItem = [
     { title: "Home", link: '/'},
-    { title: "About", link: '/'},
-    { title: "Service", link: '/'},
-    { title: "Pages", link: '/'},
-    { title: "Portfolio", link: '/'},
-    { title: "Blog", link: '/'},
-    { title: "Contact", link: '/'},
+    { title: "About", link: '/about'},
+    { title: "Service", link: '/services'},
+    { title: "Pages", link: '/pages'},
+    { title: "Portfolio", link: '/portfolio'},
+    { title: "Blog", link: '/blog'},
+    { title: "Contact", link: '/contact'},
   ]
+
+  // const navItem = [
+  //   { title: "Home", link: '/'},
+  //   { title: "About", link: '/'},
+  //   { title: "Service", link: '/'},
+  //   { title: "Pages", link: '/'},
+  //   { title: "Portfolio", link: '/'},
+  //   { title: "Blog", link: '/'},
+  //   { title: "Contact", link: '/'},
+  // ]
 
   return (
     <>
@@ -48,7 +48,7 @@ export default function Header() {
                               
                   <li key={nav.title}>
                     <NavLink to={nav.link} className={({isActive}) => isActive ? 'text-black hover:text-red-400 transition-all duration-300 delay-150 ease-in-out' : 
-                    'text-red-600 hover:underline hover:underline-offset-4 transition-all duration-300 ease-in-out delay-150 '} >
+                    'text-black hover:text-red-400 transition-all duration-300 delay-150 ease-in-out'} >
                       {nav.title}
                     </NavLink> 
                   </li>

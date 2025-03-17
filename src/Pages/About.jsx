@@ -3,9 +3,9 @@ import { About } from '../Components/index'
 
 export default function about() {
   return (
-    <div>
+    <main>
       <About />
-    </div>
+    </main>
   )
 }
 
