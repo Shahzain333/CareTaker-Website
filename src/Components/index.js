@@ -8,6 +8,8 @@ import Button from "./Button";
 import Input from "./Input";
 import About from "./about/About";
 import Services from './services/Service';
+import ChooseUs from "./chooseUs/ChooseUs";
+import Pricing from "./pricing/Pricing";
 
 export {
     TopBar,
@@ -17,6 +19,8 @@ export {
     Card,
     About,
     Services,
+    ChooseUs,
+    Pricing,
     Container,
     Button,
     Input

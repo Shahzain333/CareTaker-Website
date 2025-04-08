@@ -58,7 +58,7 @@ function Service() {
   ];
 
   return (
-    <section className="pb-10 pt-18">
+    <section className="pb-5 pt-18">
       
       <div className="relative">
 
@@ -112,7 +112,8 @@ function Service() {
                     <i className="fa-solid fa-house text-5xl text-white"></i>
                   </div>
                   
-                  <h1 className="text-6xl sm:text-7xl font-light text-gray-300">0{item.id}</h1>
+                  <h1 style={{textShadow: "2px 2px 2px rgba(270,0,0,0.9)"}}  
+                  className="text-6xl sm:text-7xl font-bold text-red-400 ">0{item.id}</h1>
                 
                 </div>
 
@@ -123,8 +124,8 @@ function Service() {
                   
                   <p className="text-gray-600 text-sm">{item.description}</p>
                   
-                  <NavLink to={item.link}>
-                    <Button className="bg-red-400 text-white font-semibold py-0 px-4 transition-all 
+                  <NavLink to={`/allService`}>
+                    <Button className="bg-red-400 text-white font-semibold px-4 py-2 transition-all 
                     duration-300 hover:bg-gray-700 rounded-lg text-center group">
                       Details
                       <i className="fa-solid fa-arrow-up rotate-45 ml-2 transition-transform duration-300 
@@ -140,6 +141,7 @@ function Service() {
             ))}
 
           </div>
+          
         </div>
 
         {/* Neste Routing */}

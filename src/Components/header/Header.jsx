@@ -12,21 +12,11 @@ export default function Header() {
     { title: "Home", link: '/'},
     { title: "About", link: '/about'},
     { title: "Service", link: '/services'},
-    { title: "Pages", link: '/pages'},
+    { title: "Pricing", link: '/pricing'},
+    { title: "Donation", link: '/donation'},
     { title: "Portfolio", link: '/portfolio'},
-    { title: "Blog", link: '/blog'},
     { title: "Contact", link: '/contact'},
   ]
-
-  // const navItem = [
-  //   { title: "Home", link: '/'},
-  //   { title: "About", link: '/'},
-  //   { title: "Service", link: '/'},
-  //   { title: "Pages", link: '/'},
-  //   { title: "Portfolio", link: '/'},
-  //   { title: "Blog", link: '/'},
-  //   { title: "Contact", link: '/'},
-  // ]
 
   return (
     <>
@@ -61,7 +51,7 @@ export default function Header() {
             </div>
 
             
-            <div className=" flex items-center justify-between">
+            <div className="flex items-center justify-center gap-3">
               
               {/* Search Button */}
               <Button className="hidden md:block">
@@ -73,10 +63,10 @@ export default function Header() {
 
               </Button >
               
-              {/* TAlk Button */}
-              <Button type="button" className="bg-red-400 text-white text-[1em] font-semibold py-3 px-4 hidden  
+              {/* SignIn Button */}
+              <Button type="button" className="bg-red-400 text-white text-[1em] font-semibold py-2 px-4 hidden  
                 transition-all duration-300 hover:bg-gray-700 group md:block rounded-lg ">
-               Let's Talk
+               Sign In
                <i className="fa-solid fa-arrow-up rotate-45 ml-2 transition-transform duration-300 group-hover:rotate-90"></i>
               </Button>
 

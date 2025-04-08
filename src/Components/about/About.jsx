@@ -110,7 +110,7 @@ function About() {
 
           </div>
 
-          <Button type="button" className="bg-red-400 text-white md:text-[1.3rem] text-[1.4em] font-semibold py-4 px-4 
+          <Button type="button" className="bg-red-400 text-white text-[1.4em] font-semibold py-2 px-3 
             transition-all duration-300 hover:bg-gray-700 group rounded-lg mt-6 ">
             Discover More 
             <i className="fa-solid fa-arrow-up rotate-45 ml-2 transition-transform duration-300 group-hover:rotate-90"></i>

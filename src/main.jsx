@@ -9,6 +9,7 @@ import Home from "./Pages/Home.jsx"
 import About from './Pages/About.jsx'
 import Service from './Pages/Service.jsx'
 import AllService from './Pages/AllService.jsx'
+import Pricing  from './Pages/Pricing.jsx'
 
 const router = createBrowserRouter([
   {
@@ -35,18 +36,22 @@ const router = createBrowserRouter([
     },
     {
       path: '/allService',
-      element: <AllService />
+      element: <AllService />,
+    },
+    { 
+      path: '/allService/:categoryName', 
+      element: <AllService /> 
     },
     {
-      path: '/pages',
+      path: '/pricing',
+      element: <Pricing />
+    },
+    {
+      path: '/donation',
       element: <About />
     },
     {
       path: '/portfolio',
-      element: <About />
-    },
-    {
-      path: '/blog',
       element: <About />
     },
     {

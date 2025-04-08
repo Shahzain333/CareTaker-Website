@@ -2,7 +2,10 @@ import React from 'react'
 import Container from "../Container"
 import Logo from "../../assets/img/Seno Care.png"
 
-function Card() {
+function Card({
+    className = '',
+    ...props
+  }) {
 
     const cardItem = [
         {
@@ -34,31 +37,32 @@ function Card() {
     
   return (
 
-    <section className='px-10'>
+    <section className='px-20'>
     
     <Container>
 
         <div className="flex flex-col gap-8 pb-10">
   
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:grid-cols-4 pt-6">
+            <div className={`grid gap-8 pt-6 ${className}`}>
 
                 {cardItem.map((item) => (
        
-                  <div key={item.id} className={`flex gap-4 flex-col rounded-2xl shadow-md overflow-hidden 
-                   transform transition-transform duration-300 hover:scale-102 ${item.id === 1 ? 'bg-purple-300' 
-                   : item.id === 2 ? "bg-blue-300" : item.id === 3 ? "bg-green-300" : "bg-yellow-300"}`}>
+                  <div key={item.id} style={{ backgroundColor: item.id === 1 ? "rgb(255, 230, 230)" : item.id === 2 
+                    ? "rgb(220, 240, 255)" : item.id === 3 ? "rgb(255, 245, 220)"  : "rgb(240, 230, 255)", }} 
+                    className={`flex gap-4 flex-col rounded-2xl shadow-md overflow-hidden 
+                     transform transition-transform duration-300 hover:scale-102 `}>
                     
                     {/* Image portion */}
                     
                     <div className="flex items-center justify-between p-4 w-full">
 
                         {/* Left Side: Image */}
-                        <img className="w-10 sm:w-12 md:w-14 lg:w-18 object-cover" src={item.image} alt={item.name} />
+                        <img className="w-14 object-cover" src={item.image} alt={item.name} />
 
                         {/* Right Side: Number & Border */}
                         <div className="flex items-center gap-2 absolute top-2 right-3">
-                            <div className="w-4 sm:w-6 md:w-8 border-b-4 border-b-red-500 rounded-full"></div>
-                            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-red-500">0{item.id}</h1>
+                            <div className="w-8 border-b-4 border-b-red-500 rounded-full"></div>
+                            <h1 className="text-4xl font-bold text-red-500">0{item.id}</h1>
                         </div>
  
                     </div>
