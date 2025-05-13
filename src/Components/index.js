@@ -10,6 +10,8 @@ import About from "./about/About";
 import Services from './services/Service';
 import ChooseUs from "./chooseUs/ChooseUs";
 import Pricing from "./pricing/Pricing";
+import Donation from "./donation/Donation";
+import AnimatedProgressBar from "./animatedProgressBar";
 
 export {
     TopBar,
@@ -19,11 +21,13 @@ export {
     Card,
     About,
     Services,
+    Donation,
     ChooseUs,
     Pricing,
     Container,
     Button,
-    Input
+    Input,
+    AnimatedProgressBar
 };
 
 

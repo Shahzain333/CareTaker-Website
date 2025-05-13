@@ -37,13 +37,13 @@ function Card({
     
   return (
 
-    <section className='px-20'>
+    <section className='px-4'>
     
     <Container>
 
-        <div className="flex flex-col gap-8 pb-10">
+        <div className="flex flex-col gap-2 pb-10">
   
-            <div className={`grid gap-8 pt-6 ${className}`}>
+            <div className={`grid gap-2 pt-6 ${className}`}>
 
                 {cardItem.map((item) => (
        
@@ -54,15 +54,15 @@ function Card({
                     
                     {/* Image portion */}
                     
-                    <div className="flex items-center justify-between p-4 w-full">
+                    <div className="flex items-center justify-between p-2 lg:p-4 w-full">
 
                         {/* Left Side: Image */}
-                        <img className="w-14 object-cover" src={item.image} alt={item.name} />
+                        <img className="w-10 md:w-14 object-cover" src={item.image} alt={item.name} />
 
                         {/* Right Side: Number & Border */}
-                        <div className="flex items-center gap-2 absolute top-2 right-3">
-                            <div className="w-8 border-b-4 border-b-red-500 rounded-full"></div>
-                            <h1 className="text-4xl font-bold text-red-500">0{item.id}</h1>
+                        <div className="flex items-center gap-1 md:gap-2 absolute top-2 right-3">
+                            <div className="w-6 md:w-8 border-b-4 border-b-red-500 rounded-full"></div>
+                            <h1 className="text-2xl md:text-4xl font-bold text-red-500">0{item.id}</h1>
                         </div>
  
                     </div>

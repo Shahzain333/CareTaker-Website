@@ -10,6 +10,7 @@ import About from './Pages/About.jsx'
 import Service from './Pages/Service.jsx'
 import AllService from './Pages/AllService.jsx'
 import Pricing  from './Pages/Pricing.jsx'
+import Donation from './Pages/Donation.jsx'
 
 const router = createBrowserRouter([
   {
@@ -48,7 +49,7 @@ const router = createBrowserRouter([
     },
     {
       path: '/donation',
-      element: <About />
+      element: <Donation />
     },
     {
       path: '/portfolio',

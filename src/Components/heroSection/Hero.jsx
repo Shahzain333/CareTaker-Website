@@ -9,7 +9,7 @@ export default function HeroSection(props) {
 
     return (
         
-      <section className='lg:pb-45 md:pb-75 pb-85 py-15'>
+      <section className='lg:pb-32 md:pb-80 pb-75 py-15'>
                 
         <div className='relative'>
                     
@@ -48,7 +48,7 @@ export default function HeroSection(props) {
               <div className='flex items-center gap-4'>
                           
                 <Link to="/">
-                  <Button type='button' className='bg-red-400 text-white  font-semibold py-3 px-4 transition-all 
+                  <Button type='button' className='bg-red-400 text-white  font-semibold py-3 px-3 md:px-4 transition-all 
                   duration-300 hover:bg-gray-700 group rounded-lg text-center cursor-pointer'>
                       Add more
                       <i className="fa-solid fa-arrow-up rotate-45 ml-2 transition-transform duration-300 
@@ -71,19 +71,20 @@ export default function HeroSection(props) {
 
             {/* Box TO Find User Absolute */}
 
-            <div className="absolute bg-white shadow-md p-4 md:p-6 rounded-2xl w-[90%] md:w-[85%] lg:w-[60%] 
-              flex-wrap flex-col -translate-y-5 md:-translate-y-6 lg:mx-20 md:mx-10 mx-5">
+            <div className="absolute bg-white shadow-md p-4 md:p-6 rounded-2xl w-[90%] lg:w-[80%] 
+              flex-wrap flex-col -translate-y-5 md:-translate-y-6 lg:mx-20 md:mx-9 mx-4">
         
               <h1 className="text-[1.3rem] sm:text-2xl font-bold mb-4 mx-2 sm:mx-4">Find Us Near You</h1>
     
               <form className="mx-2 sm:mx-4">
+                
+                <div className="flex flex-col lg:flex-row  gap-4">
 
-                <div className="flex flex-col lg:flex-row flex-wrap gap-4">
-
-                  <div className="flex items-center gap-2 px-2 border border-gray-300 rounded-lg w-full sm:w-auto">
-
+                  {/* City Selector */}
+                  <div className="flex items-center gap-2 px-2 border border-gray-300 rounded-lg w-full">
+                    
                     <i className="fa-solid fa-location-dot text-red-500"></i>
-
+                    
                     <select className="text-gray-500 outline-none w-full p-3">
                       <option>Choose City</option>
                       <option>New York</option>
@@ -93,23 +94,26 @@ export default function HeroSection(props) {
 
                   </div>
 
-                  <div className="flex items-center border border-gray-300 rounded-lg px-2 w-full sm:w-auto">
+                  {/* Area Input */}
+                  <div className="flex items-center border border-gray-300 rounded-lg px-2 w-full">
                     <i className="fa-solid fa-location-dot text-red-500"></i>
-                    <Input type="text" className="border-none text-gray-500 w-full sm:w-40" placeholder="Enter Area" />
+                    <Input type="text" className="border-none text-gray-500 w-full p-3" placeholder="Enter Area"/>
                   </div>
 
-                  <div className="flex items-center border border-gray-300 rounded-lg px-2 w-full sm:w-auto">
+                  {/* Postal Code Input */}
+                  <div className="flex items-center border border-gray-300 rounded-lg px-2 w-full">
                     <i className="fa-solid fa-location-dot text-red-500"></i>
-                    <Input type="text" className="border-none text-gray-500 w-full sm:w-40" placeholder="Enter Postal Code" />
+                    <Input type="text" className="border-none text-gray-500 w-full p-3" placeholder="Enter Postal Code"/>
                   </div>
 
+                  {/* Submit Button */}
                   <Button className="bg-red-400 text-white text-[1.1em] font-semibold py-3 px-5 transition-all 
-                   duration-300 hover:bg-gray-700 rounded-lg w-full sm:w-auto">
-                   Find Now
+                    duration-300 hover:bg-gray-700 rounded-lg w-full">
+                    Find Now
                   </Button>
-
+                
                 </div>
-
+              
               </form>
 
             </div>

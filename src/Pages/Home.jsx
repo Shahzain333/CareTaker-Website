@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, HeroSection, About, Services, ChooseUs, Pricing } from "../Components/index"
+import { Card, HeroSection, About, Services, ChooseUs, Pricing,Donation } from "../Components/index"
 
 function Home() {
   
@@ -34,11 +34,12 @@ function Home() {
   return (
     <main>
         <HeroSection />
-        <Card className={`grid-cols-1 sm:grid-cols-2 lg:grid-cols-4`} />
+        <Card className={`grid-cols-2 lg:grid-cols-4`} />
         <About />
         <Services />
         <ChooseUs />
         <Pricing />
+        <Donation />
     </main>
   )
 }

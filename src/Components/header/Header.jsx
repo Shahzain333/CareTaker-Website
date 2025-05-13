@@ -30,7 +30,7 @@ export default function Header() {
             </div>
 
             {/* For desktop  and laptop */}
-            <div className='hidden md:block text-[1.2em]'>
+            <div className='hidden md:block text-[1.1rem] lg:text-[1.2em]'>
                         
               <ul className='flex items-center justify-between md:gap-4 lg:gap-6 gap-0 font-semibold '>
                 
@@ -51,7 +51,7 @@ export default function Header() {
             </div>
 
             
-            <div className="flex items-center justify-center gap-3">
+            <div className="flex items-center justify-center gap-2 lg:gap-3">
               
               {/* Search Button */}
               <Button className="hidden md:block">
@@ -64,8 +64,8 @@ export default function Header() {
               </Button >
               
               {/* SignIn Button */}
-              <Button type="button" className="bg-red-400 text-white text-[1em] font-semibold py-2 px-4 hidden  
-                transition-all duration-300 hover:bg-gray-700 group md:block rounded-lg ">
+              <Button type="button" className="bg-red-400 text-white text-[1em] font-semibold py-2 px-3 lg:px-4 
+              hidden transition-all duration-300 hover:bg-gray-700 group md:block rounded-lg ">
                Sign In
                <i className="fa-solid fa-arrow-up rotate-45 ml-2 transition-transform duration-300 group-hover:rotate-90"></i>
               </Button>

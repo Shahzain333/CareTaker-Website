@@ -52,8 +52,6 @@ function Pricing() {
     { name: "Win Awards", value: 0, max: 50 },
   ]);
 
-  const maxCount = 6560;
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCounts(prevCounts =>
@@ -91,7 +89,7 @@ function Pricing() {
   // ];
 
   return (
-    <section className='lg:pb-35 md:pb-75 pb-125 py-10'>
+    <section className='lg:pb-35 md:pb-55 pb-15 py-10'>
        
        <div className='relative'>
                 
@@ -99,10 +97,10 @@ function Pricing() {
             <div className="absolute inset-0 bg-black opacity-50"></div>
              
             {/* Background Image */}
-            <img className="w-full h-[220vh] md:h-[160vh] lg:h-[150vh] object-cover" src={heroImage} alt="Hero Section" />
+            <img className="w-full h-[350vh] md:h-[260vh] lg:h-[150vh] object-cover" src={heroImage} alt="Hero Section" />
             
             {/* Text */}
-            <div className="absolute lg:top-1/9 top-1/14 left-1/2 transform -translate-x-1/2 text-center w-full px-4 ">
+            <div className="absolute lg:top-1/9 top-1/20 left-1/2 transform -translate-x-1/2 text-center w-full px-4 ">
             
               <div className="flex flex-col items-center justify-center gap-4">
             
@@ -131,7 +129,7 @@ function Pricing() {
 
             {/* Pricing Card */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center lg:mt-12 mt-4 md:gap-16 
-            gap-10 p-6 md:p-9 absolute lg:top-[30%] md:top-[20%] top-[15%] w-full ">
+            gap-10 p-6 md:p-9 absolute lg:top-[30%] md:top-[20%] top-[17%] w-full ">
               
               {pricingPlans.map((plan, index) => (
                 
@@ -183,25 +181,26 @@ function Pricing() {
             </div>
 
             {/* Box TO Find User Absolute */}
-            <div className="absolute bg-[#202d4d] text-white shadow-md p-4 md:p-6 rounded-2xl w-[95%] lg:mx-10 mx-5
-            -translate-y-18 md:-translate-y-15">
+            <div className="absolute bg-[#202d4d] text-white shadow-md p-2 md:p-6 rounded-2xl w-[90%] 
+            lg:mx-15 md:mx-10 mx-5 -translate-y-10 md:-translate-y-12">
 
-              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2'>
+              <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-1 md:gap-2'>
                 
                 {counts.map((review,index) => (
 
-                  <div key={index} className="flex items-center justify-center text-center gap-3 border border-gray-600 
-                  p-3 rounded-2xl w-full">
+                  <div key={index} className="flex items-center justify-center text-center gap-1 md:gap-3 border 
+                  border-gray-600 p-1.5 md:p-3 rounded-2xl w-full">
                   
-                    <div className="bg-white text-[#00c9c3] p-4 w-20 h-20 rounded-full text-5xl">
+                    <div className="bg-white text-[#00c9c3] md:p-4 w-9 h-9 md:w-20 md:h-20 rounded-full 
+                    text-2xl md:text-5xl">
                       <i className="fas fa-chair"></i>
                     </div>
   
-                    <div className='flex flex-col items-start gap-2'>
+                    <div className='flex flex-col items-start md:gap-2'>
   
-                      <p className="text-5xl font-bold text-[#00c9c3]">{review.value.toLocaleString()}</p>
+                      <p className="text-[1.2rem] md:text-5xl font-bold text-[#00c9c3]">{review.value.toLocaleString()}</p>
       
-                      <p className="text-[1.1rem] font-bold">+ {review.name}</p>
+                      <p className="text-[0.6rem] md:text-[1.1rem] font-bold">+ {review.name}</p>
   
                     </div>
                   
